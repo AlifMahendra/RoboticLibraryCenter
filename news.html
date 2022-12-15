@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-900 overflow=x-hidden">
+  <!-- nav-bar start -->
+  <div class="flex justify-between z-40 py-3 px-4 w-full items-center fixed text-gray-300 bg-gray-800 md:bg-transparent">
+    <div class="font-medium md:p-5 flex items-center">
+      <img src="https://dummyimage.com/40x40" alt="" class="overflow-hidden bg-gray-500 h-12 w-12 rounded-full mr-1 object-center">
+      <div class="flex flex-col">
+        <h1 class="text-white text-lg md:text-xl">RoboticLibraryCenter</h1>
+        <p class="text-sm font-thin">robotic news and book tray</p>
+      </div>
+    </div>
+    <div class="flex flex-col md:hidden gap-1 z-20 p-1 overflow-hidden" onclick="openNavBar()">
+      <div class="w-6 p-0.5 origin-top-left rounded-full bg-gray-300 duration-700" id="bar-frst"></div>
+      <div class="w-6 p-0.5 origin-center rounded-full bg-yellow-400 duration-700" id="bar-scnd"></div>
+      <div class="w-6 p-0.5 origin-bottom-left rounded-full bg-gray-300 duration-700" id="bar-thrd"></div>
+    </div>
+    <nav class="flex flex-col gap-4 top-0 bg-gray-800 duration-700 text-gray-300 w-1/2 h-screen -right-full items-start p-10 absolute md:static md:items-end md:h-auto md:p-5 md:flex-row md:w-auto md:bg-transparent" id="navbar-slider">
+      <a href="index.html">Home</a>
+      <a href="library.html">Library</a>
+      <a href="news.html">News</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+  <!-- nav bar end -->
+
+  <!-- hero section news` start -->
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep.</p>
+      </div>
+    </div>
+  </section>
+  <!-- hero section news` end -->
+
+  <!-- news start -->
+  <div class="max-w-screen-xl p-5 mx-auto dark:bg-gray-800 dark:text-gray-100">
+    <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2">
+      <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500" style="background-image: url(&quot;https://source.unsplash.com/random/240x320&quot;);">
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+          <a rel="noopener noreferrer" href="#" class="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined">Politics</a>
+          <div class="flex flex-col justify-start text-center dark:text-gray-100">
+            <span class="text-3xl font-semibold leading-none tracking-wide">04</span>
+            <span class="leading-none uppercase">Aug</span>
+          </div>
+        </div>
+        <h2 class="z-10 p-5">
+          <a rel="noopener noreferrer" href="#" class="font-medium text-md hover:underline dark:text-gray-100"> Autem sunt tempora mollitia magnam non voluptates</a>
+        </h2>
+      </div>
+      <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500" style="background-image: url(&quot;https://source.unsplash.com/random/241x320&quot;);">
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+          <a rel="noopener noreferrer" href="#" class="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined">Health</a>
+          <div class="flex flex-col justify-start text-center dark:text-gray-100">
+            <span class="text-3xl font-semibold leading-none tracking-wide">01</span>
+            <span class="leading-none uppercase">Aug</span>
+          </div>
+        </div>
+        <h2 class="z-10 p-5">
+          <a rel="noopener noreferrer" href="#" class="font-medium text-md hover:underline dark:text-gray-100">Inventore reiciendis aliquam excepturi</a>
+        </h2>
+      </div>
+      <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500" style="background-image: url(&quot;https://source.unsplash.com/random/242x320&quot;);">
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+          <a rel="noopener noreferrer" href="#" class="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined">Science</a>
+          <div class="flex flex-col justify-start text-center dark:text-gray-100">
+            <span class="text-3xl font-semibold leading-none tracking-wide">28</span>
+            <span class="leading-none uppercase">Jul</span>
+          </div>
+        </div>
+        <h2 class="z-10 p-5">
+          <a rel="noopener noreferrer" href="#" class="font-medium text-md hover:underline dark:text-gray-100">Officiis mollitia dignissimos commodi optio vero animi</a>
+        </h2>
+      </div>
+      <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500" style="background-image: url(&quot;https://source.unsplash.com/random/243x320&quot;);">
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+          <a rel="noopener noreferrer" href="#" class="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined">Sports</a>
+          <div class="flex flex-col justify-start text-center dark:text-gray-100">
+            <span class="text-3xl font-semibold leading-none tracking-wide">19</span>
+            <span class="leading-none uppercase">Jul</span>
+          </div>
+        </div>
+        <h2 class="z-10 p-5">
+          <a rel="noopener noreferrer" href="#" class="font-medium text-md hover:underline dark:text-gray-100">Doloribus sit illo necessitatibus architecto exercitationem enim</a>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <!-- news end -->
+
+  <!-- all news start -->
+  <section class="text-gray-400 body-font bg-gray-900 md:px-24">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-600 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Chichen Itza</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-600 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Colosseum Roma</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-600 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Great Pyramid of Giza</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-600 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">San Francisco</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-600 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Chichen Itza</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-600 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Colosseum Roma</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-600 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">Great Pyramid of Giza</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-600 bg-opacity-40 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
+            <h3 class="tracking-widest text-yellow-400 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">San Francisco</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- all news end -->
+  <script src="js/script.js"></script>
+</body>
+</html>
