@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 text-gray-200 px-5 justify-between flex flex-col md:px-0 overflow-x-hidden py-5 min-h-screen md:max-w-3xl mx-auto">
+  <div class="w-full mx-auto">
+    <div class="max-w-md mx-auto">
+      <h1 class="font-medium max-w-md mx-auto text-lg">Reporter</h1>
+      <div class="w-16 max-w-md p-0.5 rounded-full bg-yellow-400 "></div>
+      <p class="mb-4">place to upload your news here</p>
+    </div>
+    <form action="" class="mx-auto max-w-md gap-4 flex flex-col w-full items-center">
+      <div class="items-start text-gray-200 gap-1 flex flex-col w-full">
+        <p class="flex items-center gap-1"><ion-icon name="camera"></ion-icon>input the foto</p>
+        <input type="file" required name="" id="" class="mx-auto border bg-gray-800 rounded-md w-full border-gray-600">
+      </div>
+      <div class="items-start text-gray-200 gap-1 flex flex-col w-full">
+        <p class="flex items-center gap-1"><ion-icon name="reader"></ion-icon>input the foto</p>
+        <input type="text" required name="" id="" class="p-1 mx-auto border bg-gray-800 rounded-md w-full border-gray-600">
+      </div>
+      <div class="items-start text-gray-200 gap-1 flex flex-col w-full">
+        <p class="items-center flex gap-1"><ion-icon name="albums"></ion-icon>description</p>
+        <textarea name="" id="" cols="30" rows="10" class="bg-gray-800 rounded border border-gray-600 w-full"></textarea>
+      </div>
+      <div class="w-full text-end">
+        <button type="submit" class="font-medium bg-yellow-400 rounded inline-block px-2.5 py-1.5 text-gray-900">Upload</button>
+      </div>
+    </form>
+  </div>
+  <div class="text-end w-full pt-4 mx-auto flex gap-6 mt-4 border-t border-t-gray-400 justify-center">
+    <a href="tambah-news.html">news</a>
+    <a href="tambah-galery.html">fotograffer</a>
+  </div>
+</body>
+</html>

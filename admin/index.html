@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 text-gray-400 overflow-x-hidden py-5 md:max-w-3xl mx-auto">
+  <section>
+    <div class="px-10 text-gray-200 text-lg mb-4 font-medium flex items-center gap-1" style="font-family: poppins;"><ion-icon name="person"></ion-icon> alif mahendra</div>
+    <div class="flex w-full px-10 justify-between items-center">
+      <div class="w-full flex items-center justify-between">
+        <div class="w-20 h-20 rounded-full bg-gray-600 object-center bg-center bg-cover bg-no-repeat" style="background-image: url(https://dummyimage.com/100x100);"></div>
+        <div class="rounded-full text-gray-200 text-lg font-medium flex flex-col items-center">
+          <p class="text-2xl -mb-2" style="font-family: poppins;">12</p>
+          <p>Posted</p>
+        </div>
+        <div class="rounded-full text-gray-200 text-lg font-medium flex flex-col items-center">
+          <p class="text-2xl -mb-2" style="font-family: poppins;">6</p>
+          <p>News</p>
+        </div>
+        <div class="rounded-full text-gray-200 text-lg font-medium flex flex-col items-center">
+          <p class="text-2xl -mb-2" style="font-family: poppins;">6</p>
+          <p>Galery</p>
+        </div>
+      </div>
+    </div>
+    <p class="px-10 mt-5 max-w-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, adipisci.</p>
+    <a href="" class="bg-gray-800 mx-10 block text-center py-1.5 rounded-md mt-4">Edit Profile</a>
+  </section>
+  <section class="py-5 flex flex-col items-center px-10 overflow-x-hidden">
+    <div class="flex gap-5 justify-center w-full border-b border-b-gray-400">
+      <p onclick="varOne()" id="bud-1" class="cursor-pointer py-1.5 px-2 duration-700 rounded-t-md flex items-center gap-1 bg-gray-400 text-gray-900"><ion-icon name="newspaper"></ion-icon> news</p>
+      <p onclick="varTwo()" id="bud-2" class="cursor-pointer py-1.5 px-2 duration-700 rounded-t-md flex items-center gap-1"><ion-icon name="image"></ion-icon> galery</p>
+      <a href="" class="cursor-pointer py-1.5 px-2 duration-700 rounded-t-md flex items-center gap-1"><ion-icon name="duplicate"></ion-icon>post</a>
+    </div>
+    <div class="flex w-full relative overflow-x-hidden min-h-screen mt-10">
+      <div id="first" class="w-full absolute left-0 duration-700 flex flex-wrap justify-center gap-4 items-start">
+        <div class="w-40 h-40 bg-black relative overflow-hidden group">
+          <div class="h-full justify-end absolute -bottom-full duration-700 group-hover:bottom-0 flex flex-col items-start p-2">
+            <div class="text-yellow-400 text-sm bg-black/50 font-medium">Lorem ipsum dolor sit amet.</div>
+            <div class="text-gray-400 text-xs bg-black/50 text-medium">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+          </div>
+        </div>
+        <div class="w-40 h-40 bg-black relative overflow-hidden group">
+          <div class="h-full justify-end absolute -bottom-full duration-700 group-hover:bottom-0 flex flex-col items-start p-2">
+            <div class="text-yellow-400 text-sm bg-black/50 font-medium">Lorem ipsum dolor sit amet.</div>
+            <div class="text-gray-400 text-xs bg-black/50 text-medium">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+          </div>
+        </div>
+        <div class="w-40 h-40 bg-black relative overflow-hidden group">
+          <div class="h-full justify-end absolute -bottom-full duration-700 group-hover:bottom-0 flex flex-col items-start p-2">
+            <div class="text-yellow-400 text-sm bg-black/50 font-medium">Lorem ipsum dolor sit amet.</div>
+            <div class="text-gray-400 text-xs bg-black/50 text-medium">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+          </div>
+        </div>
+        <div class="w-40 h-40 bg-black relative overflow-hidden group">
+          <div class="h-full justify-end absolute -bottom-full duration-700 group-hover:bottom-0 flex flex-col items-start p-2">
+            <div class="text-yellow-400 text-sm bg-black/50 font-medium">Lorem ipsum dolor sit amet.</div>
+            <div class="text-gray-400 text-xs bg-black/50 text-medium">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+          </div>
+        </div>
+        <div class="w-40 h-40 bg-black relative overflow-hidden group">
+          <div class="h-full justify-end absolute -bottom-full duration-700 group-hover:bottom-0 flex flex-col items-start p-2">
+            <div class="text-yellow-400 text-sm bg-black/50 font-medium">Lorem ipsum dolor sit amet.</div>
+            <div class="text-gray-400 text-xs bg-black/50 text-medium">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+          </div>
+        </div>
+      </div>
+      <div id="second" class="w-full absolute left-full duration-700 gap-4 flex flex-wrap justify-center items-start">
+        <div class="w-40 h-40 bg-green-900"></div>
+        <div class="w-40 h-40 bg-green-900"></div>
+        <div class="w-40 h-40 bg-green-900"></div>
+        <div class="w-40 h-40 bg-green-900"></div>
+        <div class="w-40 h-40 bg-green-900"></div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var sideValue = 1;
+    var first = document.getElementById("first");
+    var second = document.getElementById("second");
+    var bud1 = document.getElementById("bud-1");
+    var bud2 = document.getElementById("bud-2");
+
+    function varOne() {
+      sideValue = 1;
+      slideBar();
+    }
+    function varTwo() {
+      sideValue = 0;
+      slideBar();
+    }
+    function slideBar() {
+      if(sideValue == 1) {
+        first.classList.remove("-left-full");
+        first.classList.add("left-0");
+        second.classList.remove("left-0");
+        second.classList.add("left-full");
+        bud1.classList.add("text-gray-900");
+        bud1.classList.add("bg-gray-400");
+        bud2.classList.remove("bg-gray-400");
+        bud2.classList.remove("text-gray-900");
+      }else{
+        first.classList.remove("left-0");
+        first.classList.add("-left-full");
+        second.classList.remove("left-full");
+        second.classList.add("left-0");
+        bud1.classList.remove("text-gray-900");
+        bud1.classList.remove("bg-gray-400");
+        bud2.classList.add("bg-gray-400");
+        bud2.classList.add("text-gray-900");
+      }
+    }    
+  </script>
+</body>
+</html>

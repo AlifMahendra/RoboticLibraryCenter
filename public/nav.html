@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-900 overflow=x-hidden">
+    <div class="flex justify-between py-3 px-4 w-full items-center fixed text-gray-300 bg-gray-800 md:bg-transparent">
+        <div class="font-medium md:p-5 flex items-center">
+            <img src="https://dummyimage.com/40x40" alt="" class="overflow-hidden bg-gray-500 h-12 w-12 rounded-full mr-1 object-center">
+            <div class="flex flex-col">
+                <h1 class="text-white text-lg md:text-xl">RoboticLibraryCenter</h1>
+                <p class="text-sm font-thin">robotic news and book tray</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:hidden gap-1 z-20 p-1 overflow-hidden" onclick="openNavBar()">
+            <div class="w-6 p-0.5 origin-top-left rounded-full bg-gray-300 duration-700" id="bar-frst"></div>
+            <div class="w-6 p-0.5 origin-center rounded-full bg-gray-300 duration-700" id="bar-scnd"></div>
+            <div class="w-6 p-0.5 origin-bottom-left rounded-full bg-gray-300 duration-700" id="bar-thrd"></div>
+        </div>
+        <nav class="flex flex-col gap-4 top-0 bg-gray-800 duration-700 text-gray-300 w-1/2 h-screen -right-full items-start p-10 absolute md:static md:items-end md:h-auto md:p-5 md:flex-row md:w-auto md:bg-transparent" id="navbar-slider">
+            <a href="index.html">Home</a>
+            <a href="library.html">Library</a>
+            <a href="news.html">News</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
+    <script>
+        var slider = document.getElementById("navbar-slider");
+        var bar1 = document.getElementById("bar-frst");
+        var bar2 = document.getElementById("bar-scnd");
+        var bar3 = document.getElementById("bar-thrd");
+
+        function openNavBar() {
+            slider.classList.toggle('-right-full');
+            slider.classList.toggle('right-0');
+            bar1.classList.toggle("rotate-45");
+            bar3.classList.toggle('-rotate-45');
+            bar2.classList.toggle('translate-x-24')
+        }
+    </script>
+</body>
+</html>
